@@ -42,12 +42,12 @@
         compatible = "zmk,combos";
         combo_enter {
             timeout-ms = <50>;
-            key-positions = <D F>;
+            key-positions = <32 33>;  // D F
             bindings = <&kp ENTER>;
         };
         combo_backspace {
             timeout-ms = <50>;
-            key-positions = <C V>;
+            key-positions = <50 51>;  // C V
             bindings = <&kp BSPC>;
         };
     };
