@@ -18,9 +18,7 @@
           bindings = <&kp>, <&kp>;
       };
    };
-};
 
-/ {
     behaviors {
         gresc: grave_escape {
             compatible = "zmk,behavior-mod-morph";
@@ -30,7 +28,7 @@
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
     };
-};
+
 
   keymap {
     compatible = "zmk,keymap";
