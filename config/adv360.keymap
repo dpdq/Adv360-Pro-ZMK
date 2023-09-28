@@ -30,7 +30,7 @@
         };
         greveback: grave_backspace {
             compatible = "zmk,behavior-mod-morph";
-            label = "GRAVE_ESCAPE";
+            label = "GRAVE_BSPC";
             #binding-cells = <0>;
             bindings = <&kp BSPC>, <&kp GRAVE>;
             mods = <(MOD_LALT|MOD_LSFT)>;
