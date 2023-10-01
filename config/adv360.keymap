@@ -52,8 +52,18 @@
         };
         combo_backspace_2 {
             timeout-ms = <50>;
-            key-positions = <30 31>;  // C V
-            bindings = <&kp BCPC>;
+            key-positions = <30 31>;  // S D
+            bindings = <&kp BSPC>;
+        };
+        combo_backspace_3 {
+            timeout-ms = <50>;
+            key-positions = <29 30 31 32>;  // A S D F
+            bindings = <&kp BSPC>;
+        };
+        combo_backspace_4 {
+            timeout-ms = <50>;
+            key-positions = <32 33>;  // F G
+            bindings = <&kp BSPC>;
         };
     };
 
