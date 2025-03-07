@@ -41,11 +41,11 @@
         };
     };
 
-
   keymap {
     compatible = "zmk,keymap";
 
     default_layer {
+      display-name = "Base";
       bindings = <
         &greveback  &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 4 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp DEL
         &kp TAB     &kp Q     &kp W    &kp E    &kp R      &kp T  &none                                                            &tog 1 &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
@@ -55,6 +55,7 @@
       >;
     };
     keypad {
+      display-name = "Kp";
       bindings = <
         &kp DEL   &kp N1    &kp N2   &kp N3    &kp N4     &kp N5 &trans                                                            &mo 4 &kp N6 &kp KP_NUM &kp KP_EQUAL &kp LBRC &kp RBRC &kp EQUAL
         &kp INS   &kp Q     &kp UP   &kp E     &kp R      &kp T  &kp C_VOL_UP                                                      &tog 1 &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp EQUAL    &kp BSLH
@@ -63,7 +64,8 @@
         &kp LCTL  &kp EQUAL  &kp LALT &kp LEFT  &kp RIGHT                    &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &tog 2
       >;
     };
-    new1 {
+    fn {
+      display-name = "Fn";
       bindings = <
         &kp GRAVE &kp F1    &kp F2   &kp F3    &kp F4     &kp F5 &trans                                                            &mo 4 &kp F6 &kp KP_NUM &kp KP_EQUAL &kp LBRC &kp RBRC &kp BSPC
         &kp DEL   &kp Q     &kp UP   &kp E     &kp R      &kp T  &kp C_VOL_UP                                                      &tog 1 &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp EQUAL    &kp BSLH
@@ -72,27 +74,34 @@
         &kp LCTL  &kp EQUAL  &kp LALT &kp DOWN  &kp UP                    &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &tog 2
       >;
     };
-    fn {
-      bindings = <
-        &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &tog 1                                         &mo 4  &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12
-        &trans &trans &kp UP &trans &trans &trans  &bootloader                                   &none  &trans &trans &trans &trans  &trans  &trans
-        &trans &kp LEFT &kp DOWN &kp RIGHT &trans &trans        &none  &trans &trans &trans      &none &none &trans &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans &trans                      &trans &trans                    &trans  &trans &trans &trans  &trans  &trans
-        &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans              &trans &trans &trans  &trans  &trans
-      >;
-    };
     mod {
+      display-name = "Mod";
       bindings = <
         &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                     &trans                 &none        &none        &none        &none &none &none
         &none &none        &none        &none        &none        &none        &bootloader                                                               &bootloader            &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none        &none        &none                   &none &none &bt BT_CLR &none                      &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &none        &none                                      &none &none                                                        &none        &none        &none        &none &none &none
+        &studio_unlock &none        &none        &none        &none        &none        &none                   &none &none &bt BT_CLR &none                      &stp STP_BAT &none        &none        &none        &none &none &none
+        &none &none        &none        &none        &macro_ver   &none                                      &none &none                                                        &none        &none        &none        &none &none &none
         &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none &none &none
       >;
     };
+    extra1 { 
+      display-name = "Red";    
+      status = "reserved";
+    };
+
+    extra2 { 
+      display-name = "Purple";    
+      status = "reserved";
+    };
+
+    extra3 { 
+      display-name = "Cyan";    
+      status = "reserved";
+    };
+
+    extra4 { 
+      display-name = "Yellow";    
+      status = "reserved";
+    };
   };
 };
-
-
-
-
