@@ -58,10 +58,10 @@
       display-name = "Kp";
       bindings = <
         &kp DEL   &kp F1    &kp F2   &kp F3    &kp F4     &kp F5 &trans                                                            &mo 3 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp EQUAL
-        &kp INS   &kp Q     &kp UP   &kp E     &kp R      &kp T  &kp F11                                                      &tog 1 &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_PLUS     &kp BSLH
-        &kp CAPS  &kp LEFT  &kp DOWN &kp RIGHT &kp F      &kp G  &kp F12     &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &tog 2 &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp EQUAL     &kp SQT
+        &kp INS   &kp F11     &kp F12   &kp E     &kp R      &kp T  &kp C_VOL_UP                                                      &tog 1 &kp Y  &kp KP_N7  &kp KP_N8    &kp KP_N9     &kp KP_PLUS     &kp BSLH
+        &kp CAPS  &kp LEFT  &kp DOWN &kp RIGHT &kp F      &kp G  &kp C_VOL_DN     &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &tog 2 &kp H  &kp KP_N4  &kp KP_N5    &kp KP_N6     &kp EQUAL     &kp SQT
         &kp LSHFT &kp LSHFT &kp X    &kp UP     &kp DOWN      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp KP_N1  &kp KP_N2    &kp KP_N3     &kp MINUS    &kp RSHFT
-        &kp LCTL  &kp EQUAL  &kp LALT &kp LEFT  &kp RIGHT                    &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp KP_N0              &kp UP     &kp DOWN     &kp KP_DOT    &kp RBKT        &tog 2
+        &kp LCTL  &kp EQUAL  &kp LALT &kp LEFT  &kp RIGHT                    &kp BSPC &kp DEL   &kp END  &kp PG_DN &kp ENTER &kp KP_N0              &kp C_BRIGHTNESS_INC     &kp C_BRIGHTNESS_DEC     &kp KP_DOT    &kp RBKT        &tog 2
       >;
     };
     fn {
